@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-lm-tpN" userLabel="Button">
-                                <rect key="frame" x="60" y="552" width="294" height="110"/>
+                                <rect key="frame" x="60" y="552" width="294" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Login" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-GL-lqA">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
@@ -51,15 +51,17 @@
                                             <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3a-MD-oA4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pj-U7-yTE">
-                                        <rect key="frame" x="0.0" y="60" width="294" height="50"/>
-                                        <state key="normal" backgroundImage="RegisterButton"/>
-                                        <connections>
-                                            <segue destination="YKP-Ra-1OX" kind="show" id="wdx-K2-YjE"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOE-lN-meP">
+                                <rect key="frame" x="60" y="812" width="294" height="30"/>
+                                <state key="normal" title="Don't have an account? Register">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YKP-Ra-1OX" kind="show" id="LPS-xP-DrO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,11 +71,14 @@
                             <constraint firstItem="eyj-lm-tpN" firstAttribute="top" secondItem="Uoa-EP-nFR" secondAttribute="bottom" constant="60" id="APA-bc-D9Q"/>
                             <constraint firstItem="Uoa-EP-nFR" firstAttribute="top" secondItem="thq-QN-cw9" secondAttribute="bottom" constant="40" id="Hd5-2p-7Wz"/>
                             <constraint firstItem="thq-QN-cw9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="JMj-U1-gYa"/>
+                            <constraint firstItem="dOE-lN-meP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="TXV-Vj-2xG"/>
                             <constraint firstItem="Uoa-EP-nFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgC-G7-D51"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyj-lm-tpN" secondAttribute="trailing" constant="60" id="djA-Hi-jWX"/>
                             <constraint firstItem="eyj-lm-tpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="dvd-o0-Gr1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoa-EP-nFR" secondAttribute="trailing" constant="60" id="kHM-xr-bdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dOE-lN-meP" secondAttribute="bottom" constant="20" id="lOG-Rk-pYu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thq-QN-cw9" secondAttribute="trailing" constant="60" id="t6s-mq-8fX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOE-lN-meP" secondAttribute="trailing" constant="60" id="yyu-Qx-Hzd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Membership App" id="FLG-Zf-r0p"/>

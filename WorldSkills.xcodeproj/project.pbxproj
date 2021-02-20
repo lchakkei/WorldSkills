@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		104407DB25E0C651000043D0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				10FD671C25E0A08C0056076F /* LoginViewController.swift */,
+				10FD671F25E0A0950056076F /* RegisterViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		10FD66F925E0A0520056076F = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +108,7 @@
 		10FD672725E0A2C40056076F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				10FD671C25E0A08C0056076F /* LoginViewController.swift */,
-				10FD671F25E0A0950056076F /* RegisterViewController.swift */,
+				104407DB25E0C651000043D0 /* Auth */,
 				104407D825E0BDC0000043D0 /* TabBarController.swift */,
 			);
 			path = Controller;
