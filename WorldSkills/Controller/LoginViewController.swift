@@ -16,9 +16,14 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if UserDefaults.standard.bool(forKey: "LOGGED") {
             print("Logged")
+
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TabBar") as! TabBarController
+            self.view.window?.rootViewController = vc
+            self.view.window?.makeKeyAndVisible()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }
