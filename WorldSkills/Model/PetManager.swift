@@ -14,7 +14,7 @@ class PetManager {
     
     // MARK: - Auth
     
-    func login(email: String, password: String, buttonID: String, completion: @escaping (Error?) -> ()) {
+    func login(email: String, password: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.loginURL!)
         
         urlRequest.httpMethod = "POST"

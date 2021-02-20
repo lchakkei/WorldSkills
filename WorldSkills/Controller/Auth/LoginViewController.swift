@@ -37,9 +37,7 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 
-        let buttonID = "login"
-        
-        petManager.login(email: email, password: password, buttonID: buttonID) { (error) in
+        petManager.login(email: email, password: password) { (error) in
 
         }
         
