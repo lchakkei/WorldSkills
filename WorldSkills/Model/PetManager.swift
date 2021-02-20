@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PetManager {
+class PetManager {
     
     var pets = [Data]()
     let decoder = JSONDecoder()
@@ -76,8 +76,8 @@ struct PetManager {
         URLSession.shared.dataTask(with: Utilities.listURL!) { (data, response, error) in
             guard let safeData = data else {return}
             do {
-                let decodedData = try decoder.decode(Pet.self, from: safeData)
-                // self.pets = decodedData.data
+                let decodedData = try self.decoder.decode(Pet.self, from: safeData)
+                self.pets = decodedData.data
                 DispatchQueue.main.async {
                     //completion(.success(decodedData))
                     completion(decodedData.data, nil)

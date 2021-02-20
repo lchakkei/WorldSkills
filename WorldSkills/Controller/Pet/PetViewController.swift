@@ -19,10 +19,10 @@ class PetViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        petManager.petsList() {
-            data, erorr in
-            print("\(data)")
+        petManager.petsList() { data, erorr in
+            
         }
+
     }
 
 }
@@ -32,11 +32,13 @@ class PetViewController: UIViewController {
 extension PetViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return petManager.pets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let pets = petManager.pets[indexPath.row]
+        cell.textLabel?.text = pets.name
         return cell
     }
     
