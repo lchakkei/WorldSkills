@@ -13,9 +13,10 @@
 		104407EC25E0E340000043D0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407EB25E0E340000043D0 /* UpdatePasswordViewController.swift */; };
 		10EF092825E0FA740061BCB5 /* PetUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF092725E0FA740061BCB5 /* PetUpdateViewController.swift */; };
 		10EF092C25E0FB4D0061BCB5 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF092B25E0FB4D0061BCB5 /* PetViewController.swift */; };
+		10EF093425E10DEA0061BCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EF093225E10DEA0061BCB5 /* Main.storyboard */; };
 		10FD670625E0A0520056076F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670525E0A0520056076F /* AppDelegate.swift */; };
 		10FD670825E0A0520056076F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670725E0A0520056076F /* SceneDelegate.swift */; };
-		10FD670D25E0A0520056076F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD670B25E0A0520056076F /* Main.storyboard */; };
+		10FD670D25E0A0520056076F /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD670B25E0A0520056076F /* Auth.storyboard */; };
 		10FD670F25E0A0530056076F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FD670E25E0A0530056076F /* Assets.xcassets */; };
 		10FD671225E0A0530056076F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD671025E0A0530056076F /* LaunchScreen.storyboard */; };
 		10FD671D25E0A08C0056076F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD671C25E0A08C0056076F /* LoginViewController.swift */; };
@@ -32,10 +33,11 @@
 		104407EB25E0E340000043D0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		10EF092725E0FA740061BCB5 /* PetUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetUpdateViewController.swift; sourceTree = "<group>"; };
 		10EF092B25E0FB4D0061BCB5 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		10EF093325E10DEA0061BCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WorldSkills/View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10FD670225E0A0520056076F /* WorldSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD670525E0A0520056076F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FD670725E0A0520056076F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10FD670C25E0A0520056076F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10FD670C25E0A0520056076F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		10FD670E25E0A0530056076F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10FD671125E0A0530056076F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10FD671325E0A0530056076F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,7 +122,8 @@
 		10FD671A25E0A0740056076F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				10FD670B25E0A0520056076F /* Main.storyboard */,
+				10FD670B25E0A0520056076F /* Auth.storyboard */,
+				10EF093225E10DEA0061BCB5 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,7 +207,8 @@
 			files = (
 				10FD671225E0A0530056076F /* LaunchScreen.storyboard in Resources */,
 				10FD670F25E0A0530056076F /* Assets.xcassets in Resources */,
-				10FD670D25E0A0520056076F /* Main.storyboard in Resources */,
+				10EF093425E10DEA0061BCB5 /* Main.storyboard in Resources */,
+				10FD670D25E0A0520056076F /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +238,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		10FD670B25E0A0520056076F /* Main.storyboard */ = {
+		10EF093225E10DEA0061BCB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10EF093325E10DEA0061BCB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10FD670B25E0A0520056076F /* Auth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				10FD670C25E0A0520056076F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 		10FD671025E0A0530056076F /* LaunchScreen.storyboard */ = {
