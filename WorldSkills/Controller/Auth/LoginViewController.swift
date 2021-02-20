@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let userManager = UserManager()
+    let petManager = PetManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,11 @@ class LoginViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
+        petStatus()
+        
+    }
+    
+    func petStatus() {
         if UserDefaults.standard.bool(forKey: "LOGGED") {
             print("Logged")
 
@@ -28,7 +33,6 @@ class LoginViewController: UIViewController {
             self.view.window?.makeKeyAndVisible()
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
     }
 
     @IBAction func loginButton(_ sender: Any) {
@@ -37,7 +41,7 @@ class LoginViewController: UIViewController {
 
         let buttonID = "login"
         
-        userManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
+        petManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
 
         }
         
@@ -45,6 +49,7 @@ class LoginViewController: UIViewController {
     
 }
 
+// MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method

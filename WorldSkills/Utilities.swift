@@ -8,13 +8,15 @@
 import Foundation
 
 struct Utilities {
+    static let API_KEY = "https://wshk1920.herokuapp.com/"
     // Auth
-    static let registerURL = URL(string: "https://reqres.in/api/register")
-    static let loginURL = URL(string: "https://reqres.in/api/login")
-    static let updatePasswordURL = URL(string: "https://reqres.in/api/password")
+    static let registerURL = URL(string: "\(API_KEY)api/register")
+    static let loginURL = URL(string: "\(API_KEY)api/login")
+    static let updatePasswordURL = URL(string: "\(API_KEY)api/password")
     
     // CRUD
-    static let listPets = URL(string: "https://reqres.in/api/pets")
-    static let createPets = URL(string: "https://reqres.in/api/pets/")
-    static let deletePets = URL(string: "https://reqres.in/api/pets/2")
+    static let listURL = URL(string: "\(API_KEY)api/pets")
+    static let createURL = URL(string: "\(API_KEY)api/pets/")
+    static let deleteURL = "\(API_KEY)api/pets/2"
+    static let updateURL = "\(API_KEY)api/pets/"
 }

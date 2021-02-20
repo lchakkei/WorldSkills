@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		104407D925E0BDC0000043D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407D825E0BDC0000043D0 /* TabBarController.swift */; };
 		104407DE25E0C93C000043D0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407DD25E0C93C000043D0 /* SettingsViewController.swift */; };
+		104407E425E0E240000043D0 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407E325E0E240000043D0 /* PetDetailViewController.swift */; };
+		104407EC25E0E340000043D0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407EB25E0E340000043D0 /* UpdatePasswordViewController.swift */; };
+		10EF092825E0FA740061BCB5 /* PetUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF092725E0FA740061BCB5 /* PetUpdateViewController.swift */; };
+		10EF092C25E0FB4D0061BCB5 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF092B25E0FB4D0061BCB5 /* PetViewController.swift */; };
 		10FD670625E0A0520056076F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670525E0A0520056076F /* AppDelegate.swift */; };
 		10FD670825E0A0520056076F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670725E0A0520056076F /* SceneDelegate.swift */; };
 		10FD670D25E0A0520056076F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD670B25E0A0520056076F /* Main.storyboard */; };
@@ -16,14 +20,18 @@
 		10FD671225E0A0530056076F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD671025E0A0530056076F /* LaunchScreen.storyboard */; };
 		10FD671D25E0A08C0056076F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD671C25E0A08C0056076F /* LoginViewController.swift */; };
 		10FD672025E0A0950056076F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD671F25E0A0950056076F /* RegisterViewController.swift */; };
-		10FD672425E0A22C0056076F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD672325E0A22C0056076F /* User.swift */; };
+		10FD672425E0A22C0056076F /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD672325E0A22C0056076F /* Pet.swift */; };
 		10FD672925E0A2F30056076F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD672825E0A2F30056076F /* Utilities.swift */; };
-		10FD672C25E0A34F0056076F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD672B25E0A34F0056076F /* UserManager.swift */; };
+		10FD672C25E0A34F0056076F /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD672B25E0A34F0056076F /* PetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		104407D825E0BDC0000043D0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		104407DD25E0C93C000043D0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		104407E325E0E240000043D0 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		104407EB25E0E340000043D0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		10EF092725E0FA740061BCB5 /* PetUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetUpdateViewController.swift; sourceTree = "<group>"; };
+		10EF092B25E0FB4D0061BCB5 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		10FD670225E0A0520056076F /* WorldSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD670525E0A0520056076F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FD670725E0A0520056076F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +41,9 @@
 		10FD671325E0A0530056076F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10FD671C25E0A08C0056076F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10FD671F25E0A0950056076F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		10FD672325E0A22C0056076F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		10FD672325E0A22C0056076F /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		10FD672825E0A2F30056076F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		10FD672B25E0A34F0056076F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		10FD672B25E0A34F0056076F /* PetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,25 @@
 				10FD671F25E0A0950056076F /* RegisterViewController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		104407E825E0E2D5000043D0 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				10EF092B25E0FB4D0061BCB5 /* PetViewController.swift */,
+				104407E325E0E240000043D0 /* PetDetailViewController.swift */,
+				10EF092725E0FA740061BCB5 /* PetUpdateViewController.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		104407E925E0E310000043D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				104407DD25E0C93C000043D0 /* SettingsViewController.swift */,
+				104407EB25E0E340000043D0 /* UpdatePasswordViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		10FD66F925E0A0520056076F = {
@@ -101,8 +128,8 @@
 		10FD672225E0A21C0056076F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				10FD672325E0A22C0056076F /* User.swift */,
-				10FD672B25E0A34F0056076F /* UserManager.swift */,
+				10FD672325E0A22C0056076F /* Pet.swift */,
+				10FD672B25E0A34F0056076F /* PetManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,9 +137,10 @@
 		10FD672725E0A2C40056076F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				104407E925E0E310000043D0 /* Settings */,
+				104407E825E0E2D5000043D0 /* Pet */,
 				104407DB25E0C651000043D0 /* Auth */,
 				104407D825E0BDC0000043D0 /* TabBarController.swift */,
-				104407DD25E0C93C000043D0 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,14 +216,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FD671D25E0A08C0056076F /* LoginViewController.swift in Sources */,
+				104407EC25E0E340000043D0 /* UpdatePasswordViewController.swift in Sources */,
 				104407D925E0BDC0000043D0 /* TabBarController.swift in Sources */,
 				10FD672025E0A0950056076F /* RegisterViewController.swift in Sources */,
 				10FD672925E0A2F30056076F /* Utilities.swift in Sources */,
-				10FD672425E0A22C0056076F /* User.swift in Sources */,
+				10EF092C25E0FB4D0061BCB5 /* PetViewController.swift in Sources */,
+				10FD672425E0A22C0056076F /* Pet.swift in Sources */,
 				10FD670625E0A0520056076F /* AppDelegate.swift in Sources */,
-				10FD672C25E0A34F0056076F /* UserManager.swift in Sources */,
+				10EF092825E0FA740061BCB5 /* PetUpdateViewController.swift in Sources */,
+				10FD672C25E0A34F0056076F /* PetManager.swift in Sources */,
 				10FD670825E0A0520056076F /* SceneDelegate.swift in Sources */,
 				104407DE25E0C93C000043D0 /* SettingsViewController.swift in Sources */,
+				104407E425E0E240000043D0 /* PetDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

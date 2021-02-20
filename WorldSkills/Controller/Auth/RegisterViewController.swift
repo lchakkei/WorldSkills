@@ -12,7 +12,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let userManager = UserManager()
+    let petManager = PetManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,14 @@ class RegisterViewController: UIViewController {
         
         let buttonID = "register"
         
-        userManager.userRegister(email: email, password: password) { (error) in
+        petManager.userRegister(email: email, password: password) { (error) in
 
         }
     }
     
 }
 
+// MARK: - UITextFieldDelegate
 extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
