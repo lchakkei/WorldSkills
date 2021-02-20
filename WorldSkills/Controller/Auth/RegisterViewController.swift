@@ -25,7 +25,7 @@ class RegisterViewController: UIViewController {
         
         let buttonID = "register"
         
-        userManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
+        userManager.userRegister(email: email, password: password) { (error) in
 
         }
     }
