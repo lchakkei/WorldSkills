@@ -27,8 +27,6 @@ class RegisterViewController: UIViewController {
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let confirmationPassword = confirmationPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         
-        let buttonID = "register"
-        
         if password == confirmationPassword {
             petManager.register(email: email, password: password) { (error) in
 

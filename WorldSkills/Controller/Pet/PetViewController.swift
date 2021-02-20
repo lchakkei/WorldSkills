@@ -50,7 +50,7 @@ extension PetViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             petManager.petDelete(id: indexPath.row) { (error) in
-                print(error)
+ 
             }
         }
     }
