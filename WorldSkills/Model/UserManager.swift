@@ -9,8 +9,9 @@ import Foundation
 
 struct UserManager {
     
-    func userAuth(email: String, password: String, completion: @escaping (Error?) -> ()) {
+    func userAuth(email: String, password: String, buttonID: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.loginURL!)
+        
         urlRequest.httpMethod = "POST"
         let params = ["email": email, "password": password]
         do {
@@ -35,7 +36,8 @@ struct UserManager {
             completion(error)
         }
     }
-
+    
+    
     func userRegister(email: String, password: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.registerURL!)
         urlRequest.httpMethod = "POST"

@@ -23,8 +23,10 @@ class RegisterViewController: UIViewController {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         
-        userManager.userRegister(email: email, password: password) { (error) in
-            
+        let buttonID = "register"
+        
+        userManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
+
         }
     }
     

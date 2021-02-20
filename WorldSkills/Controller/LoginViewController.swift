@@ -31,9 +31,11 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
-    
-        userManager.userAuth(email: email, password: password) { (error) in
-  
+
+        let buttonID = "login"
+        
+        userManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
+
         }
         
     }
