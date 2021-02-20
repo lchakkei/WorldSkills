@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWJ-Cn-dcp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -35,7 +35,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Membership System " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thq-QN-cw9">
-                                <rect key="frame" x="60" y="344" width="294" height="20"/>
+                                <rect key="frame" x="60" y="343.5" width="294" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,6 +53,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pj-U7-yTE">
                                         <rect key="frame" x="0.0" y="50" width="294" height="30"/>
                                         <state key="normal" title="Register New Account"/>
+                                        <connections>
+                                            <segue destination="YKP-Ra-1OX" kind="show" id="wdx-K2-YjE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -60,19 +63,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="top" secondItem="thq-QN-cw9" secondAttribute="bottom" constant="40" id="BU0-Ql-nfg"/>
-                            <constraint firstItem="thq-QN-cw9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="EdR-XX-B62"/>
-                            <constraint firstItem="thq-QN-cw9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Ria-re-iPl"/>
-                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TxI-Ab-IUx"/>
-                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U92-2K-N5z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyj-lm-tpN" secondAttribute="trailing" constant="60" id="bQe-sz-5MF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoa-EP-nFR" secondAttribute="trailing" constant="60" id="e0f-LP-8Xe"/>
-                            <constraint firstItem="eyj-lm-tpN" firstAttribute="top" secondItem="Uoa-EP-nFR" secondAttribute="bottom" constant="60" id="edU-C0-l6n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thq-QN-cw9" secondAttribute="trailing" constant="60" id="gck-fJ-E2B"/>
-                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="ldk-e2-IJd"/>
-                            <constraint firstItem="eyj-lm-tpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="rDK-qM-rqQ"/>
+                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="0vq-t7-SG7"/>
+                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2vz-Y8-gq0"/>
+                            <constraint firstItem="eyj-lm-tpN" firstAttribute="top" secondItem="Uoa-EP-nFR" secondAttribute="bottom" constant="60" id="APA-bc-D9Q"/>
+                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="top" secondItem="thq-QN-cw9" secondAttribute="bottom" constant="40" id="Hd5-2p-7Wz"/>
+                            <constraint firstItem="thq-QN-cw9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="JMj-U1-gYa"/>
+                            <constraint firstItem="Uoa-EP-nFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgC-G7-D51"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyj-lm-tpN" secondAttribute="trailing" constant="60" id="djA-Hi-jWX"/>
+                            <constraint firstItem="eyj-lm-tpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="dvd-o0-Gr1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uoa-EP-nFR" secondAttribute="trailing" constant="60" id="kHM-xr-bdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thq-QN-cw9" secondAttribute="trailing" constant="60" id="t6s-mq-8fX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FLG-Zf-r0p"/>
                     <connections>
                         <outlet property="emailTextField" destination="0Gj-IA-neh" id="BPN-Pz-eZa"/>
                         <outlet property="passwordTextField" destination="vVF-dJ-jhT" id="Kq1-ch-Oes"/>
@@ -81,7 +84,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="Mbt-F9-vkp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="20" y="89"/>
+            <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="vJK-pI-wuF">
@@ -119,7 +122,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Membership System Registeration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-C6-zwK">
-                                <rect key="frame" x="60" y="344" width="294" height="20"/>
+                                <rect key="frame" x="60" y="343.5" width="294" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,17 +131,16 @@
                         <viewLayoutGuide key="safeArea" id="im0-MR-Xde"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="im0-MR-Xde" firstAttribute="trailing" secondItem="UmL-Yd-ysd" secondAttribute="trailing" constant="60" id="7V1-dg-bzj"/>
-                            <constraint firstItem="AZW-T3-5Dc" firstAttribute="leading" secondItem="im0-MR-Xde" secondAttribute="leading" constant="60" id="8Le-M2-vso"/>
-                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="top" secondItem="bKX-C6-zwK" secondAttribute="bottom" constant="40" id="GKe-5I-Ofb"/>
-                            <constraint firstItem="AZW-T3-5Dc" firstAttribute="top" secondItem="UmL-Yd-ysd" secondAttribute="bottom" constant="60" id="MKh-gj-2Pw"/>
-                            <constraint firstItem="bKX-C6-zwK" firstAttribute="top" secondItem="im0-MR-Xde" secondAttribute="top" constant="300" id="P1c-TN-nff"/>
-                            <constraint firstItem="bKX-C6-zwK" firstAttribute="leading" secondItem="im0-MR-Xde" secondAttribute="leading" constant="60" id="VSI-r3-If2"/>
-                            <constraint firstItem="im0-MR-Xde" firstAttribute="trailing" secondItem="bKX-C6-zwK" secondAttribute="trailing" constant="60" id="XEY-eN-LaT"/>
-                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="centerX" secondItem="pxU-tq-Mep" secondAttribute="centerX" id="XnF-aH-Afk"/>
-                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="centerY" secondItem="pxU-tq-Mep" secondAttribute="centerY" id="Zdl-D8-l19"/>
-                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="leading" secondItem="im0-MR-Xde" secondAttribute="leading" constant="60" id="cfw-1r-zAo"/>
-                            <constraint firstItem="im0-MR-Xde" firstAttribute="trailing" secondItem="AZW-T3-5Dc" secondAttribute="trailing" constant="60" id="rsD-Z9-MuS"/>
+                            <constraint firstItem="im0-MR-Xde" firstAttribute="trailing" secondItem="UmL-Yd-ysd" secondAttribute="trailing" constant="60" id="2nr-kq-hAt"/>
+                            <constraint firstItem="AZW-T3-5Dc" firstAttribute="leading" secondItem="im0-MR-Xde" secondAttribute="leading" constant="60" id="4Cf-u7-FBG"/>
+                            <constraint firstItem="AZW-T3-5Dc" firstAttribute="top" secondItem="UmL-Yd-ysd" secondAttribute="bottom" constant="60" id="6ju-R5-eUp"/>
+                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="centerY" secondItem="pxU-tq-Mep" secondAttribute="centerY" id="LtY-8L-bf7"/>
+                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="leading" secondItem="im0-MR-Xde" secondAttribute="leading" constant="60" id="Ufj-km-3Qf"/>
+                            <constraint firstItem="im0-MR-Xde" firstAttribute="trailing" secondItem="AZW-T3-5Dc" secondAttribute="trailing" constant="60" id="kGS-ui-VlH"/>
+                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="centerX" secondItem="pxU-tq-Mep" secondAttribute="centerX" id="nN6-5D-pTg"/>
+                            <constraint firstAttribute="trailing" secondItem="bKX-C6-zwK" secondAttribute="trailing" constant="60" id="pmu-Hv-rYK"/>
+                            <constraint firstItem="bKX-C6-zwK" firstAttribute="leading" secondItem="pxU-tq-Mep" secondAttribute="leading" constant="60" id="qM6-91-A7O"/>
+                            <constraint firstItem="UmL-Yd-ysd" firstAttribute="top" secondItem="bKX-C6-zwK" secondAttribute="bottom" constant="40" id="yo5-jR-74Z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CI9-tf-4ES"/>
@@ -149,7 +151,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYr-Xf-RPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="88"/>
+            <point key="canvasLocation" x="1671.0144927536232" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wqy-An-tAb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oWJ-Cn-dcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E0g-eC-87U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TOx-lH-JoV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sW-Ba-TMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="88"/>
         </scene>
     </scenes>
     <resources>
