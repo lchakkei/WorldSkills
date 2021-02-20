@@ -12,7 +12,7 @@ struct UserManager {
     func userAuth(email: String, password: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.loginURL!)
         urlRequest.httpMethod = "POST"
-        let params = ["email": "eve.holt@reqres.in", "password": "cityslicka"]
+        let params = ["email": email, "password": password]
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: .init())
             
@@ -26,7 +26,7 @@ struct UserManager {
                     print(response.statusCode)
                     return
                 } else {
-                    // UserDefaults.standard.set(true, forKey: "LOGGED")
+                    UserDefaults.standard.set(true, forKey: "LOGGED")
                     print("Success")
                 }
                 completion(nil)
@@ -39,7 +39,7 @@ struct UserManager {
     func userRegister(email: String, password: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.registerURL!)
         urlRequest.httpMethod = "POST"
-        let params = ["email": "eve.holt@reqres.in", "password": "pistol"]
+        let params = ["email": email, "password": password]
         do {
             let data = try JSONSerialization.data(withJSONObject: params, options: .init())
             
@@ -53,7 +53,7 @@ struct UserManager {
                     print(response.statusCode)
                     return
                 } else {
-                    // UserDefaults.standard.set(true, forKey: "LOGGED")
+                    UserDefaults.standard.set(true, forKey: "LOGGED")
                     print("Success")
                 }
                 completion(nil)

@@ -44,7 +44,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-lm-tpN" userLabel="Button">
                                 <rect key="frame" x="60" y="552" width="294" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-GL-lqA">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Login" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-GL-lqA">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
                                         <state key="normal" backgroundImage="LoginButton"/>
                                         <connections>

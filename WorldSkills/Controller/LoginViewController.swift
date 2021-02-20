@@ -33,8 +33,9 @@ class LoginViewController: UIViewController {
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
     
         userManager.userAuth(email: email, password: password) { (error) in
-            
+  
         }
+        
     }
     
 }
