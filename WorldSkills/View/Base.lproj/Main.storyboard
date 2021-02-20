@@ -156,6 +156,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Membership App" id="CI9-tf-4ES"/>
                     <connections>
+                        <outlet property="confirmationPasswordTextField" destination="Udk-DA-enb" id="umZ-gj-FWi"/>
                         <outlet property="emailTextField" destination="C5e-rK-mrX" id="s7H-Gz-ffq"/>
                         <outlet property="passwordTextField" destination="pFj-iM-lVZ" id="Kg8-PP-ygh"/>
                     </connections>

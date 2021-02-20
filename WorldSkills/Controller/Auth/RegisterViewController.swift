@@ -11,6 +11,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmationPasswordTextField: UITextField!
     
     let petManager = PetManager()
     
@@ -24,11 +25,14 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButton(_ sender: Any) {
         guard let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
+        guard let confirmationPassword = confirmationPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         
         let buttonID = "register"
         
-        petManager.userRegister(email: email, password: password) { (error) in
+        if password == confirmationPassword {
+            petManager.userRegister(email: email, password: password) { (error) in
 
+            }
         }
     }
     
