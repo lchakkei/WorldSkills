@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
         let buttonID = "register"
         
         if password == confirmationPassword {
-            petManager.userRegister(email: email, password: password) { (error) in
+            petManager.register(email: email, password: password) { (error) in
 
             }
         }

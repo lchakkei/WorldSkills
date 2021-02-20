@@ -14,7 +14,7 @@ class PetManager {
     
     // MARK: - Auth
     
-    func userAuth(email: String, password: String, buttonID: String, completion: @escaping (Error?) -> ()) {
+    func login(email: String, password: String, buttonID: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.loginURL!)
         
         urlRequest.httpMethod = "POST"
@@ -43,7 +43,7 @@ class PetManager {
     }
     
     
-    func userRegister(email: String, password: String, completion: @escaping (Error?) -> ()) {
+    func register(email: String, password: String, completion: @escaping (Error?) -> ()) {
         var urlRequest = URLRequest(url: Utilities.registerURL!)
         urlRequest.httpMethod = "POST"
         let params = ["email": email, "password": password]

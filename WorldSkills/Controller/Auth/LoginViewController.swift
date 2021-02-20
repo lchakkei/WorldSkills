@@ -26,8 +26,6 @@ class LoginViewController: UIViewController {
     
     func petStatus() {
         if UserDefaults.standard.bool(forKey: "LOGGED") {
-            print("Logged")
-
             let vc = storyboard?.instantiateViewController(withIdentifier: "TabBar") as! TabBarController
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
@@ -41,7 +39,7 @@ class LoginViewController: UIViewController {
 
         let buttonID = "login"
         
-        petManager.userAuth(email: email, password: password, buttonID: buttonID) { (error) in
+        petManager.login(email: email, password: password, buttonID: buttonID) { (error) in
 
         }
         
