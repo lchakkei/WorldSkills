@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		104407D925E0BDC0000043D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407D825E0BDC0000043D0 /* TabBarController.swift */; };
+		104407DE25E0C93C000043D0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104407DD25E0C93C000043D0 /* SettingsViewController.swift */; };
 		10FD670625E0A0520056076F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670525E0A0520056076F /* AppDelegate.swift */; };
 		10FD670825E0A0520056076F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD670725E0A0520056076F /* SceneDelegate.swift */; };
 		10FD670D25E0A0520056076F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FD670B25E0A0520056076F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		104407D825E0BDC0000043D0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		104407DD25E0C93C000043D0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		10FD670225E0A0520056076F /* WorldSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FD670525E0A0520056076F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FD670725E0A0520056076F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				104407DB25E0C651000043D0 /* Auth */,
 				104407D825E0BDC0000043D0 /* TabBarController.swift */,
+				104407DD25E0C93C000043D0 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				10FD670625E0A0520056076F /* AppDelegate.swift in Sources */,
 				10FD672C25E0A34F0056076F /* UserManager.swift in Sources */,
 				10FD670825E0A0520056076F /* SceneDelegate.swift in Sources */,
+				104407DE25E0C93C000043D0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

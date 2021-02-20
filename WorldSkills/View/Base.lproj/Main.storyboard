@@ -159,27 +159,17 @@
             </objects>
             <point key="canvasLocation" x="1725" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="anQ-ay-5Cq">
             <objects>
-                <viewController id="8sF-JR-zYD" sceneMemberID="viewController">
+                <viewController id="8sF-JR-zYD" customClass="SettingsViewController" customModule="WorldSkills" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAV-4w-KOC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVQ-MU-c2l">
-                                <rect key="frame" x="183" y="433" width="48" height="30"/>
-                                <state key="normal" title="Logout"/>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IE9-RH-jat"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KVQ-MU-c2l" firstAttribute="centerY" secondItem="aAV-4w-KOC" secondAttribute="centerY" id="3EA-RP-6FI"/>
-                            <constraint firstItem="KVQ-MU-c2l" firstAttribute="centerX" secondItem="aAV-4w-KOC" secondAttribute="centerX" id="aka-WL-yLr"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="8KZ-be-1kG"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="8KZ-be-1kG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvc-bC-ZfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
