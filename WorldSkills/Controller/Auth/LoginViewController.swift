@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         if UserDefaults.standard.bool(forKey: "LOGGED") {
             print("Logged")
 
@@ -38,6 +41,15 @@ class LoginViewController: UIViewController {
 
         }
         
+    }
+    
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+       textField.resignFirstResponder()
+       return true
     }
     
 }
