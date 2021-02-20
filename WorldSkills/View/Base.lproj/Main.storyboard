@@ -3,12 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Membership App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="WorldSkills" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +31,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVF-dJ-jhT">
                                         <rect key="frame" x="0.0" y="54" width="294" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -40,19 +41,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-lm-tpN" userLabel="Button">
-                                <rect key="frame" x="60" y="552" width="294" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-lm-tpN" userLabel="Button">
+                                <rect key="frame" x="60" y="552" width="294" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-GL-lqA">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
-                                        <state key="normal" title="Login"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
+                                        <state key="normal" backgroundImage="LoginButton"/>
                                         <connections>
                                             <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3a-MD-oA4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pj-U7-yTE">
-                                        <rect key="frame" x="0.0" y="50" width="294" height="30"/>
-                                        <state key="normal" title="Register New Account"/>
+                                        <rect key="frame" x="0.0" y="60" width="294" height="50"/>
+                                        <state key="normal" backgroundImage="RegisterButton"/>
                                         <connections>
                                             <segue destination="YKP-Ra-1OX" kind="show" id="wdx-K2-YjE"/>
                                         </connections>
@@ -75,7 +76,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thq-QN-cw9" secondAttribute="trailing" constant="60" id="t6s-mq-8fX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FLG-Zf-r0p"/>
+                    <navigationItem key="navigationItem" title="Membership App" id="FLG-Zf-r0p"/>
                     <connections>
                         <outlet property="emailTextField" destination="0Gj-IA-neh" id="BPN-Pz-eZa"/>
                         <outlet property="passwordTextField" destination="vVF-dJ-jhT" id="Kq1-ch-Oes"/>
@@ -86,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Membership App-->
         <scene sceneID="vJK-pI-wuF">
             <objects>
                 <viewController id="YKP-Ra-1OX" customClass="RegisterViewController" customModule="WorldSkills" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,16 +106,16 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFj-iM-lVZ">
                                         <rect key="frame" x="0.0" y="54" width="294" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AZW-T3-5Dc" userLabel="Button">
-                                <rect key="frame" x="60" y="552" width="294" height="30"/>
+                                <rect key="frame" x="60" y="552" width="294" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-4g-PgD">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="30"/>
-                                        <state key="normal" title="Register"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
+                                        <state key="normal" backgroundImage="RegisterButton"/>
                                         <connections>
                                             <action selector="registerButton:" destination="YKP-Ra-1OX" eventType="touchUpInside" id="fdg-XR-EZS"/>
                                         </connections>
@@ -143,7 +144,7 @@
                             <constraint firstItem="UmL-Yd-ysd" firstAttribute="top" secondItem="bKX-C6-zwK" secondAttribute="bottom" constant="40" id="yo5-jR-74Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CI9-tf-4ES"/>
+                    <navigationItem key="navigationItem" title="Membership App" id="CI9-tf-4ES"/>
                     <connections>
                         <outlet property="emailTextField" destination="C5e-rK-mrX" id="s7H-Gz-ffq"/>
                         <outlet property="passwordTextField" destination="pFj-iM-lVZ" id="Kg8-PP-ygh"/>
@@ -161,6 +162,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E0g-eC-87U">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Color"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -169,10 +174,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sW-Ba-TMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="88"/>
+            <point key="canvasLocation" x="174" y="88"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LoginButton" width="348" height="50"/>
+        <image name="RegisterButton" width="348" height="50"/>
+        <namedColor name="Color">
+            <color red="0.30196078431372547" green="0.40784313725490196" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
