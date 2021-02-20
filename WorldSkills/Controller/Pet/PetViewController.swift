@@ -18,11 +18,11 @@ class PetViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        
-        petManager.petsList() { data, erorr in
-            
-        }
 
+        petManager.petsList() { (decodedData, error) in
+    
+        }
+        
     }
 
 }
@@ -39,7 +39,20 @@ extension PetViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         let pets = petManager.pets[indexPath.row]
         cell.textLabel?.text = pets.name
+        cell.detailTextLabel?.text = pets.breed
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            petManager.petDelete(id: indexPath.row) { (error) in
+                print(error)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -47,7 +60,9 @@ extension PetViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if let controller = segue.destination as? PetDetailViewController {
+            controller.pet = petManager.pets[(tableView.indexPathForSelectedRow?.row)!]
+        }
     }
     
 }

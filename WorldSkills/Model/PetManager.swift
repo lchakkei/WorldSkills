@@ -73,20 +73,17 @@ class PetManager {
     // MARK: - CRUD
     
     func petsList(completion: @escaping ([Data], Error?) -> ())  {
-        URLSession.shared.dataTask(with: Utilities.listURL!) { (data, response, error) in
+        URLSession.shared.dataTask(with: Utilities.listURL!) { [self] (data, response, error) in
             guard let safeData = data else {return}
             do {
                 let decodedData = try self.decoder.decode(Pet.self, from: safeData)
                 self.pets = decodedData.data
                 DispatchQueue.main.async {
-                    //completion(.success(decodedData))
-                    completion(decodedData.data, nil)
+                    completion(decodedData.data, error)
                 }
             } catch {
                 DispatchQueue.main.async {
-                    //completion(.failure(error))
-                    //completion(decodedData.data, nil)
-                    completion([], nil)
+                    completion([], error)
                 }
             }
         }.resume()

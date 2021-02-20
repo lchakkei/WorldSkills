@@ -15,11 +15,11 @@ class PetUpdateViewController: UIViewController {
     @IBOutlet weak var thumbnailTextField: UITextField!
     
     let petManager = PetManager()
+    var id: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func updateButton(_ sender: Any) {
@@ -28,7 +28,7 @@ class PetUpdateViewController: UIViewController {
         guard let breed = breedTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
         guard let thumbnail = thumbnailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else {return}
 
-        petManager.petUpdate(id: 0, petName: petName, species: species, breed: breed, thumbnail: thumbnail) { (error) in
+        petManager.petUpdate(id: id!, petName: petName, species: species, breed: breed, thumbnail: thumbnail) { (error) in
             
         }
     }
