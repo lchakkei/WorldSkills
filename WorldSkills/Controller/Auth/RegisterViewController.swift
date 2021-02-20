@@ -17,6 +17,8 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     @IBAction func registerButton(_ sender: Any) {
@@ -28,6 +30,15 @@ class RegisterViewController: UIViewController {
         userManager.userRegister(email: email, password: password) { (error) in
 
         }
+    }
+    
+}
+
+extension RegisterViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+       textField.resignFirstResponder()
+       return true
     }
     
 }
